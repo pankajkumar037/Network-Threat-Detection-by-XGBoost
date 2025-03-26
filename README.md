@@ -1,35 +1,48 @@
-#Cybersecurity Threat Classification with XGBoost
+🚀 Cybersecurity Threat Classification with XGBoost
 
-Overview
-This project focuses on classifying network traffic into different cybersecurity threat categories using machine learning. The goal is to distinguish between normal (BENIGN) traffic and various cyber attacks, such as DoS Hulk, PortScan, DDoS, Bot, Infiltration, and Heartbleed, using the CICIDS2017 dataset.
+🔍 Overview
+This project uses machine learning (XGBoost) to classify network traffic into:
+✅ Normal (BENIGN) traffic
+⚠️ Cyber threats (DDoS, PortScan, Bot, Infiltration, and more)
 
-The model leverages XGBoost, a powerful gradient-boosting algorithm, due to its effectiveness in handling imbalanced datasets, robustness to noisy network traffic data, and ability to provide feature importance insights.
+Built on the CICIDS2017 dataset, this model helps detect malicious network activity with high accuracy.
 
-Key Results
-Model Performance
-Achieved strong classification performance in distinguishing between different attack types.
+📊 Key Results
+🎯 Model Performance
+Accuracy: 99.65%
+Precision: 99.81%
+Recall: 99.65%
+F1 Score: 99.71%
 
-High detection rates for common threats like DDoS and PortScans.
+✔ Best at detecting: DDoS, PortScans
+✔ Handles imbalance: Rare attacks (e.g., Heartbleed) still detected
 
-Maintained good precision and recall despite severe class imbalance (BENIGN traffic dominates the dataset).
+📌 Top Predictive Features
+🔹 Flow Duration
+🔹 Packet Length Stats
+🔹 TCP Flags
+🔹 Packet Rate
 
-Feature Importance Insights
-Identified the most critical network traffic features contributing to threat detection.
+(Full feature importance in the notebook!)
 
-Features like Flow Duration, Packet Length, and TCP Flags were among the most significant predictors.
+🛠 Tech Stack
+Python 3.7+
 
-Handling Class Imbalance
-Implemented class weighting in XGBoost to improve detection of rare attack types (e.g., Infiltration and Heartbleed).
+XGBoost (for high-performance classification)
 
-Future improvements could include SMOTE (Synthetic Minority Oversampling) for better minority class representation.
+Pandas, NumPy (data processing)
 
-Next Steps
-Hyperparameter tuning for further optimization.
+Matplotlib, Seaborn (visualizations)
 
-Real-time testing on live network traffic.
+🚀 Quick Start
+1️⃣ Install & Run
+bash
+Copy
+git clone https://github.com/pankajkumar037/cybersecurity-threat-classification.git
 
-Deployment as an API for automated threat detection.
+jupyter notebook
+2️⃣ Explore the Notebook
+📌 Data Preprocessing
+📌 Exploratory Analysis
+📌 XGBoost Training & Evaluation
 
-This model serves as a strong foundation for automated cybersecurity monitoring systems, helping detect and mitigate network threats efficiently.
-
-🔗 Dataset Source: CICIDS2017 on Kaggle
