@@ -1,48 +1,82 @@
-🚀 Cybersecurity Threat Classification with XGBoost
+# 🚀 Cybersecurity Threat Classification with XGBoost
 
-🔍 Overview
-This project uses machine learning (XGBoost) to classify network traffic into:
-✅ Normal (BENIGN) traffic
-⚠️ Cyber threats (DDoS, PortScan, Bot, Infiltration, and more)
+## 🔍 Overview
+This project leverages **XGBoost**, a powerful machine learning algorithm, to classify network traffic into two categories:
 
-Built on the CICIDS2017 dataset, this model helps detect malicious network activity with high accuracy.
+- ✅ **Normal (BENIGN)** traffic
+- ⚠️ **Cyber Threats** (DDoS, PortScan, Bot, Infiltration, and more)
 
-📊 Key Results
-🎯 Model Performance
-Accuracy: 99.65%
-Precision: 99.81%
-Recall: 99.65%
-F1 Score: 99.71%
+Built on the **CICIDS2017** dataset, this model is designed to detect malicious network activity with high accuracy, helping to safeguard networks against potential cyber attacks.
 
-✔ Best at detecting: DDoS, PortScans
-✔ Handles imbalance: Rare attacks (e.g., Heartbleed) still detected
+---
 
-📌 Top Predictive Features
-🔹 Flow Duration
-🔹 Packet Length Stats
-🔹 TCP Flags
-🔹 Packet Rate
+## 📊 Key Results
 
-(Full feature importance in the notebook!)
+| **Metric**       | **Score**   |
+|------------------|------------|
+| **Accuracy**     | 99.65%     |
+| **Precision**    | 99.81%     |
+| **Recall**       | 99.65%     |
+| **F1 Score**     | 99.71%     |
 
-🛠 Tech Stack
-Python 3.7+
+### ✅ **Best At Detecting:**
+- **DDoS** and **PortScans**
+- Efficiently handles **rare attacks** (e.g., Heartbleed)
 
-XGBoost (for high-performance classification)
+---
 
-Pandas, NumPy (data processing)
+## 📌 Top Predictive Features
 
-Matplotlib, Seaborn (visualizations)
+- 🔹 **Flow Duration**
+- 🔹 **Packet Length Statistics**
+- 🔹 **TCP Flags**
+- 🔹 **Packet Rate**
 
-🚀 Quick Start
-1️⃣ Install & Run
-bash
-Copy
+(Full feature importance available in the notebook!)
+
+---
+
+## 🛠 Tech Stack
+
+- **Python 3.7+** — Programming Language
+- **XGBoost** — High-performance classification
+- **Pandas**, **NumPy** — Data processing
+- **Matplotlib**, **Seaborn** — Data visualization
+
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ **Clone the Repository**
+```bash
 git clone https://github.com/pankajkumar037/cybersecurity-threat-classification.git
+```
 
+### 2️⃣ **Run the Jupyter Notebook**
+```bash
 jupyter notebook
-2️⃣ Explore the Notebook
-📌 Data Preprocessing
-📌 Exploratory Analysis
-📌 XGBoost Training & Evaluation
+```
 
+---
+
+## 📚 **Features & Capabilities**
+
+- 🔍 **Data Preprocessing** — Handles missing values and normalizes data
+- 📊 **Exploratory Data Analysis (EDA)** — Visual insights into traffic patterns
+- 🚀 **Model Training** — XGBoost optimized with hyperparameter tuning
+- 📈 **Evaluation Metrics** — Precision, Recall, F1 Score
+
+---
+
+## 📢 **Contributing**
+Contributions are welcome! Feel free to open issues or create pull requests to improve this project.
+
+---
+
+## 🏷 **License**
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙌 **Acknowledgments**
+Special thanks to the creators of the **CICIDS2017** dataset for providing valuable resources for cybersecurity research.
